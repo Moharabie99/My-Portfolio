@@ -1060,9 +1060,9 @@
     <h2>Let's work together.</h2>
     <p>Open to senior Data Analyst and BI Analyst roles in Egypt and the Gulf region. Always happy to discuss interesting data problems.</p>
     <div class="contact-links">
-      <button onclick="copyEmail()" class="contact-link primary" id="emailBtn" style="border:none;cursor:pointer;font-family:inherit;">
+      <button onclick="openEmail()" class="contact-link primary" style="border:none;cursor:pointer;font-family:inherit;">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        <span id="emailBtnText">Copy Email</span>
+        mohamrabie9@gmail.com
       </button>
       <a href="tel:+201507506305" class="contact-link ghost">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.98-.98a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -1085,12 +1085,10 @@
 </footer>
 
 <script>
-  function copyEmail() {
-    navigator.clipboard.writeText('mohamrabie9@gmail.com').then(() => {
-      const btn = document.getElementById('emailBtnText');
-      btn.textContent = '✓ Copied!';
-      setTimeout(() => btn.textContent = 'Copy Email', 2000);
-    });
+  function openEmail() {
+    const u = 'mohamrabie9';
+    const d = 'gmail.com';
+    window.location.href = 'mailto:' + u + '@' + d;
   }
 
   const reveals = document.querySelectorAll('.reveal');
